@@ -1,0 +1,82 @@
+#!/bin/sh
+
+# bebas record copyright by MR VIRUS SPM
+# saran gw elu jangan copas ketik ulang aja
+# biar elu paham plus skil bertambah
+# ingat ini program sh
+# tols instaler
+
+
+# tampilan
+clear
+figlet TOOL-INS
+echo
+sleep 1
+     echo "++++++++++++++++++++++++++++++++++++++++++"
+     echo "(+) AUTHOR = MR VIRUS SPM              (+)"
+     echo "(+) TEAM   = MAFIA TRKNOLOGI INDONESIA (+)"
+     echo "++++++++++++++++++++++++++++++++++++++++++"
+     echo
+sleep 1
+# daftar menu
+echo "[1] install bahan"
+echo "[2] hack cctv"
+echo "[3] spam call"
+echo "[4] ddos atack"
+echo "[5] keluar"
+echo
+# pilihan
+read -p "=> " pill
+sleep 1
+# pemasukan data
+if [ $pill = 1 ]
+then
+    pkg update && pkg upgrade -y
+    pkg install git -y
+    pkg install python -y
+    pkg install python2 -y
+    pkg install ruby -y
+    pkg install figlet -y
+    pkg install toilet -y
+    pip install requests -y
+    pip2 install requests -y
+    pip install mechanize -y
+    pip2 install mechanize -y
+    pkg install curl -y
+    gem install lolcat -y
+    sleep 2
+    echo "okeh bahan sudah terinstal"
+fi
+# data ke 2
+if [ $pill = 2 ]
+then
+    git clone https://github.com/Kancotdiq/ipcs
+    clear
+    cd ipcs
+    clear
+    python2 scan.py
+fi
+# data ke 3
+if [ $pill = 3 ]
+then
+    git clone https://github.com/MRV1RU55PM/MDSpammers
+    clear
+    cd MDSpammers
+    clear
+    python2 mvs.py
+fi
+# data ke 4
+if [ $pill = 4 ]
+then
+    git clone https://github.com/MrVirusSpm-07/ddos-attack
+    clear
+    cd ddos-attack
+    clear
+    python attack-ddos.py
+fi
+# data ke 5
+if [ $pill = 5 ]
+then
+    echo "thanks udh pake script saya :)"
+    exit
+fi
